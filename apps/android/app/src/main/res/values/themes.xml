@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.OfflineUPI" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/ember_red</item>
+        <item name="colorPrimaryVariant">@color/ember_red_dark</item>
+        <item name="colorOnPrimary">@color/smoke_white</item>
+        <item name="colorSecondary">@color/graphite</item>
+        <item name="colorSecondaryVariant">@color/charcoal</item>
+        <item name="colorOnSecondary">@color/smoke_white</item>
+        <item name="colorSurface">@color/charcoal</item>
+        <item name="colorOnSurface">@color/smoke_white</item>
+        <item name="android:windowBackground">@color/obsidian_black</item>
+        <item name="android:statusBarColor">@color/obsidian_black</item>
+        <item name="android:navigationBarColor">@color/obsidian_black</item>
+    </style>
+</resources>

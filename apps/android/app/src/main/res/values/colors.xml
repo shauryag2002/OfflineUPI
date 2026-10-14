@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="obsidian_black">#FF0B0B0E</color>
+    <color name="charcoal">#FF15151A</color>
+    <color name="graphite">#FF23232A</color>
+    <color name="ember_red">#FFC44343</color>
+    <color name="ember_red_dark">#FF8E2F2F</color>
+    <color name="success_green">#FF24A35A</color>
+    <color name="bank_blue">#FF2F67CC</color>
+    <color name="smoke_white">#FFF1F1F2</color>
+    <color name="muted_silver">#FF9A9AA2</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

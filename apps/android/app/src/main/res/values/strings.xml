@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">OfflineUPI</string>
+    <string name="title_home">Pay</string>
+
+    <string name="offline_upi_title">Offline UPI</string>
+    <string name="offline_upi_subtitle">Proceed payment via UPI ID or QR-to-USSD even on weak connectivity.</string>
+    <string name="how_it_works_title">How This Works</string>
+    <string name="how_it_works_body">1) Keep your payment SIM network active.\n2) Enter UPI ID or scan a UPI QR.\n3) Tap Proceed to open official *99# USSD carrier flow.\n4) Paste copied UPI ID/mobile in Send Money and complete the carrier prompts.</string>
+    <string name="payment_status">TRANSACTION STATE</string>
+    <string name="button_view_success">View Payment Success Page</string>
+    <string name="button_open_dialer">Open *99# Dialer</string>
+    <string name="receipt_not_ready">Payment details are not ready yet. Complete payment first.</string>
+    <string name="dialer_ready_manual">USSD is ready. Tap Open *99# Dialer when you want to continue.</string>
+    <string name="call_permission_denied_use_manual">Call permission denied. Use Open *99# Dialer to continue manually.</string>
+
+    <string name="pay_with_upi_id">Pay With UPI ID</string>
+    <string name="hint_upi_id">UPI ID or mobile number</string>
+    <string name="hint_amount">Amount (INR)</string>
+    <string name="hint_note">Note (optional)</string>
+    <string name="button_pay_with_upi_id">Proceed With UPI ID</string>
+    <string name="upi_tab_hint">Enter UPI ID/mobile and amount. Required fields are marked with inline errors.</string>
+
+    <string name="pay_with_qr">Pay With QR Scan</string>
+    <string name="tab_upi_id">UPI ID</string>
+    <string name="tab_scan_qr">Scan QR</string>
+    <string name="button_scan_qr">Scan UPI QR Code</string>
+    <string name="button_upload_gallery">Upload From Gallery</string>
+    <string name="hint_qr_fallback_amount">Fallback amount if QR has no amount</string>
+    <string name="button_pay_scanned_qr">Proceed With Scanned QR</string>
+    <string name="qr_tab_hint">Scan QR or upload from gallery. If QR has no amount, enter amount before proceeding.</string>
+    <string name="parsed_vpa">Parsed VPA</string>
+    <string name="parsed_name">Recipient Name</string>
+    <string name="parsed_amount">Parsed Amount</string>
+    <string name="not_available">N/A</string>
+
+    <string name="permission_camera_required">Camera permission is required to scan QR codes.</string>
+    <string name="permission_call_optional">Call permission was skipped. We will open the dialer manually.</string>
+    <string name="scan_prompt">Align the UPI QR inside the frame. Enable flashlight if needed.</string>
+    <string name="gallery_no_selection">No image selected from gallery.</string>
+    <string name="gallery_qr_not_found">No readable QR code found in this image.</string>
+    <string name="gallery_qr_loaded">QR loaded from gallery image.</string>
+    <string name="payee_copied_for_carrier">Copied for carrier paste: %1$s</string>
+    <string name="scan_failed_try_gallery">Could not read QR from camera. Try Upload From Gallery.</string>
+    <string name="flash_on">Flash On</string>
+    <string name="flash_off">Flash Off</string>
+    <string name="flash_not_supported">No Flash</string>
+    <string name="close_scan">Close</string>
+    <string name="scan_camera_hint">Align QR inside the frame. Use Flash for low light.</string>
+    <string name="enter_amount_title">Enter Amount</string>
+    <string name="proceed_label">Proceed</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="inline_error_upi_required">Enter UPI ID or mobile number to continue.</string>
+    <string name="inline_error_amount_required">Enter payment amount to continue.</string>
+    <string name="inline_error_amount_required_qr">Enter amount for this QR before proceeding.</string>
+
+    <string name="payment_success_title">Payment Successful</string>
+    <string name="payment_success_subtitle">Show this confirmation to the vendor.</string>
+    <string name="receipt_amount_label">Amount Paid</string>
+    <string name="receipt_paid_to">Paid To</string>
+    <string name="receipt_reference">Reference ID</string>
+    <string name="receipt_time">Time</string>
+    <string name="receipt_note">Note</string>
+    <string name="receipt_channel">Payment Channel</string>
+    <string name="button_done">Done</string>
+    <string name="button_share_receipt">Share Receipt</string>
+    <string name="button_new_payment">New Payment</string>
+    <string name="share_receipt_subject">UPI Payment Confirmation</string>
+    <string name="share_receipt_template">Payment Successful\nAmount: %1$s\nPaid To: %2$s\nUPI/Mobile: %3$s\nRef ID: %4$s\nTime: %5$s\nChannel: %6$s</string>
+</resources>
