@@ -1,0 +1,107 @@
+:root {
+  --bg-1: #f7f9f5;
+  --bg-2: #e9f2e4;
+  --surface: #ffffff;
+  --text: #132a13;
+  --muted: #3a5a40;
+  --accent: #2d6a4f;
+  --accent-2: #1b4332;
+  --border: #dfe9df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, var(--bg-2) 0%, var(--bg-1) 45%, #fefefe 100%);
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.home-page,
+.privacy-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 14px 36px;
+}
+
+.home-card,
+.privacy-card {
+  width: 100%;
+  max-width: 860px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 24px rgba(19, 42, 19, 0.09);
+}
+
+.home-card h1,
+.privacy-card h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.home-card p,
+.privacy-card p {
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.policy-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-2) 100%);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.policy-link:hover {
+  filter: brightness(1.03);
+}
+
+.effective-date {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.privacy-card section {
+  margin-bottom: 16px;
+}
+
+.privacy-card h2 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.privacy-card a {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .home-page,
+  .privacy-page {
+    padding: 42px 24px;
+  }
+
+  .home-card,
+  .privacy-card {
+    border-radius: 20px;
+    padding: 30px;
+  }
+}
