@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/bank_blue"
+        android:pathData="M12,12m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M6,10h12v1.5H6zM7,11.5h1.8V16H7zM11.1,11.5h1.8V16h-1.8zM15.2,11.5H17V16h-1.8zM5.5,16h13v1.5h-13zM12,6l7,3H5z" />
+</vector>

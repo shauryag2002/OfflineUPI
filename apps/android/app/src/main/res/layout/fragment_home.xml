@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/obsidian_black"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/obsidian_black"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/top_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/offline_upi_title"
+                android:textColor="@color/smoke_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/offline_upi_subtitle"
+                android:textColor="@color/muted_silver"
+                android:textSize="13sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/charcoal"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/graphite"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/how_it_works_title"
+                        android:textColor="@color/smoke_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/how_it_works_body"
+                        android:textColor="@color/muted_silver"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/charcoal"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/graphite"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_status"
+                        android:textColor="@color/muted_silver"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/text_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/smoke_white"
+                        android:textSize="16sp"
+                        tools:text="Ready for offline UPI payment" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_processing"
+                        style="@style/Widget.AppCompat.ProgressBar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/text_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/ember_red"
+                        android:textSize="13sp"
+                        android:visibility="gone"
+                        tools:text="Enter a valid UPI ID" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_open_dialer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/button_open_dialer"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/graphite"
+                        app:cornerRadius="10dp"
+                        app:strokeColor="@color/ember_red"
+                        app:strokeWidth="1dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_view_success"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/button_view_success"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/graphite"
+                        app:cornerRadius="10dp"
+                        app:strokeColor="@color/ember_red"
+                        app:strokeWidth="1dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/payment_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/charcoal"
+            app:tabIndicatorColor="@color/ember_red"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextColor="@color/smoke_white"
+            app:tabTextColor="@color/muted_silver" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/payment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
